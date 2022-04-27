@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for file in `find . -type f`
+for file in `find . -not -path '*/\.*' -type f \( ! -iname ".*" \)`
     do
         echo "Running test for $file"
         if [[ $file == *.py ]]
