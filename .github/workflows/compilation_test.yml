@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install packages
-        run: sudo apt-get install build-essential python3 default-jdk -y
+        run: sudo apt-get install build-essential python3 -y
       - name: run compilation tests
         run: bash tests/compilation_test.sh

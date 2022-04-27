@@ -9,9 +9,6 @@ for file in `ls ./src`
         elif [[ $file == *.cpp ]]
             then
                 g++ src/$file
-        elif [[ $file == *.java ]]
-            then
-                javac src/$file
         elif [[ $file == *.c ]]
             then
                 gcc src/$file
