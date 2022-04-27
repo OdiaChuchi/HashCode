@@ -12,6 +12,9 @@ for file in `find . -not -path '*/\.*' -type f \( ! -iname ".*" \)`
         elif [[ $file == *.c ]]
             then
                 gcc $file
+        elif [[ $file == *.md ]]
+            then
+                echo "Ignoring compile test for markdown files"
         else
             echo "Unknown file type"
             return 1
