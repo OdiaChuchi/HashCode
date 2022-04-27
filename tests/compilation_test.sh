@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for file in `ls -Rp | grep -v /`
+for file in `find . -type f`
     do
         echo "Running test for $file"
         if [[ $file == *.py ]]
