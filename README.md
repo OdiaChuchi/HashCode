@@ -1,2 +1,2 @@
 # HashCode
-Code we write while smoking weed
+Code we write while smoking weed 🌿🌿🌿
